@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section class="display">
+        <p class="input-display"></p>
+        <h3 class="answer-display">0</h3>
+      </section>
+      <section class="buttons">
+        <button value="clear" data-delete>C</button>
+        <button value="clear" data-delete id="ce">CE</button>
+
+        <button value="1" data-numbers>1</button>
+        <button value="2" data-numbers>2</button>
+        <button value="3" data-numbers>3</button>
+        <button value="4" data-numbers>4</button>
+        <button value="5" data-numbers>5</button>
+        <button value="6" data-numbers>6</button>
+        <button value="7" data-numbers>7</button>
+        <button value="8" data-numbers>8</button>
+        <button value="9" data-numbers>9</button>
+        <button value="0" data-numbers>0</button>
+        <button value="." data-numbers>.</button>
+
+        <button value="/" data-operator>/</button>
+        <button value="*" data-operator>x</button>
+        <button value="-" data-operator>-</button>
+        <button value="+" data-operator>+</button>
+        <button value="=" id="answer">=</button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

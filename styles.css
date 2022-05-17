@@ -1,0 +1,117 @@
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  margin: 5rem auto;
+  padding: 1rem;
+  max-width: 20rem;
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+main .display {
+  text-align: end;
+  height: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .display .answer-display {
+  margin-top: -1rem;
+}
+
+main .buttons {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+main .buttons button {
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.8rem;
+}
+
+main .buttons button:hover {
+  border: 1px solid white;
+}
+
+main .buttons button[data-numbers] {
+  background-color: #060606;
+  color: #ffffff;
+}
+
+main .buttons button[data-operator] {
+  background-color: #131313;
+  color: #ffffff;
+}
+
+main .buttons button[data-delete] {
+  background-color: #131313;
+  color: #ffffff;
+}
+
+main .buttons button[value="="] {
+  color: #ffffff;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  background-color: #3d3d68;
+}
+
+main .buttons button#ce {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+main .buttons button[value="*"] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+main .buttons button[value="/"] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+main .buttons button[value="-"] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+main .buttons button[value="+"] {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+/*# sourceMappingURL=styles.css.map */
