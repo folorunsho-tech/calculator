@@ -39,6 +39,9 @@ class Calculator {
       case "/":
         computation = prevEl / current;
         break;
+      case "%":
+        computation = prevEl % current;
+        break;
       default:
         return;
     }

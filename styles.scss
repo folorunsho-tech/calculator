@@ -56,9 +56,9 @@ main {
       background-color: $answerBtn;
     }
 
-    button#ce {
-      grid-column: 2/4;
-    }
+    // button#ce {
+    //   grid-column: 2/4;
+    // }
     button[value="*"] {
       grid-column: 4/5;
       grid-row: 2/3;
